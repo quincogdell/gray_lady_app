@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe Scraper do
 
-  # it "initializes with a url" do
-  #   url = 'www.google.com'
-  #   scraper = Scraper.new(url)
-  #   expect(scraper.url).to eq url
-  # end
+  it "initializes with a url" do
+    url = 'http://www.google.com'
+    scraper = Scraper.new(url)
+    expect(scraper.url).to eq url
+  end
 
   it "raises an error without a url" do
     expect { Scraper.new}.to raise_error(ArgumentError)

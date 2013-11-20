@@ -1,6 +1,6 @@
 class Scraper
   # attr_accessible :title, :body
-
+  attr_accessor :url
 
   def initialize(url)
     @url = url
